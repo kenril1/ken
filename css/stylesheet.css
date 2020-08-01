@@ -1,0 +1,43 @@
+
+nav {
+    background-color: rgb(18, 145, 96);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    z-index: 1000000000;
+    display: block;
+}
+
+nav li {
+    display: inline;
+    margin-right: 6.5rem;
+    float: left;
+}
+
+.background {
+
+    position: absolute
+
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: burlywood;
+    display: inline;
+    font-size: 30px
+}
+
+img {
+    float: none;
+    width: 35rem; 
+    height: 35rem;
+    object-fit: cover;
+    display:inline-block;
+
+
+}
+
+.image {
+    display:inline-block
+}
