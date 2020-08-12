@@ -51,3 +51,12 @@ img {
     border: 0px;
     margin: 0px;
 }
+
+footer {
+    text-align: right;
+    padding: 3px;
+    background-color: rgba(53, 53, 53, 0.582); 
+    color: white;
+
+
+}
