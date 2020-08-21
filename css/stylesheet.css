@@ -1,14 +1,24 @@
 body, html {
     background-color: rgb(168, 134, 89);
 
+    /* for sticky footer */
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .background {
     display: block;
     position: relative;
+    /* for sticky footer */
+    flex: 1 0 auto;
 }
 
-
+/* "auto" makes the left and right margins center the wrapper */
+#wrap { 
+	width: 900px; 
+	margin: 0 auto; 
+}
 
 nav {
     background-color: rgb(18, 145, 96);
@@ -29,6 +39,7 @@ nav li {
 
 .nav-item {
     text-decoration: none;
+    font-size: 21px;
 }
 
 h1 {
@@ -46,14 +57,20 @@ h1 {
 }
 
 
-
-footer {
-    text-align: right;
+.footer {
     padding: 3px;
-    background-color: rgba(53, 53, 53, 0.582); 
-    color: white;
+    background-color: rgba(56, 30, 19, 0.582); 
+    z-index: 100000;
+    flex-shrink: 0;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 
+}
 
+.socialmedia {
+    width: 50px;
+    height: 50px;
 }
 
 #logo {
@@ -66,16 +83,20 @@ footer {
     float: left;
 }
 
+
 *{box-sizing:border-box}
 .mySlides{display: none;}
 
 img {vertical-align: middle;}
+
+
 *{box-sizing:border-box}
 
 .slideshow-container {
     max-width:1000px;
     position: relative;
     margin:auto;
+    z-index: 20;
 }
 .default-slide{
     display: block;
@@ -127,16 +148,16 @@ background-color: #717171;
 }
 .fade {
 -webkit-animation-name: fade;
--webkit-animation-duration: 2s;
+-webkit-animation-duration: 4s;
 animation-name: fade;
-animation-duration: 2s;
+animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
-from {opacity: .4}
+from {opacity: .7}
 to {opacity: 1}
 }
 @keyframes fade {
-from {opacity: .4}
+from {opacity: .7}
 to {opacity: 1}
 }
