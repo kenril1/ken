@@ -10,48 +10,72 @@
     
        <title>Sepak Takraw Seattle</title>
 
+       <link rel="icon" href="images/TakrawLogo copy.png">
+
        <link rel="stylesheet" href="css/stylesheet.css">
+
+       <script src="index.js"></script>
        
     </head>
     
 
  <!-- Body of Page-->
 <body>
-
+    
         <nav>
+            <a href="index.html"><img id="logo" src="images/TakrawLogo copy.png" alt="Takraw logo"></a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="whatissepaktakraw.html">What Is Sepak Takraw?</a></li>
-                <li><a href="https://www.facebook.com/groups/372039800140442">Facebook Page</a></li>
+                <li><a class="nav-item" href="index.html">Home</a></li>
+                <li><a class="nav-item" href="about.html">About</a></li>
+                <li><a class="nav-item" href="whatissepaktakraw.html">What Is Sepak Takraw?</a></li>
+                <li><a class="nav-item" href="https://www.facebook.com/groups/372039800140442">Facebook Page</a></li>
+            </div>
             </ul>
         </nav>
 
-    <div class="background">
 
 
         <div class="title">
         <h1>Sepak Takraw Seattle</h1>
         </div>
+    <div class="background">
 
-            <div class="image">
-                <img src="images/philnondoublechin.jpg" alt="phil playing takraw">
+          <div class= "slideshow-container">
 
-                <img src="images/takrawfam.jpg" alt="three people with takraw ball">
+            <div class="mySlides fade default-slide">
+                <div class= "numbertext">1 / 3</div>
+                <img src="images/takrawgang.jpg" style="width:100%">
+            </div>
 
-                <img src="images/kick.JPG" alt="2 farang and 1 kon thai">
-        
-                <img src="images/jaykick.jpg" alt="jay kicking takraw">
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/takrawfam.jpg" style= "width:100%"> 
+            </div>
 
-                <img src="images/jjo.JPG" alt="jack and jack and off team">
-            </div>  
+            <div class= "mySlides fade">
+                <div class= "numbertext">3 / 3</div>
+                <img src= "images/jaykick.jpg" style="width:100%">
+            </div>
 
-        <h3> Welcome to Seattle's first ever Sepak Takraw Association!
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+     
+
+        <h3> Welcome to the Pacific Northwest's Sepak Takraw Community!
 
         </h3>
 
-    
-     </div>
+    </div>
+</div>
      <footer>
 
 
